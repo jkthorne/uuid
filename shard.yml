@@ -1,0 +1,9 @@
+name: uuid
+version: 0.1.0
+
+authors:
+  - Jack Thorne <javajax@gmail.com>
+
+crystal: 0.23.1
+
+license: MIT
