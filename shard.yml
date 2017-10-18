@@ -11,4 +11,4 @@ development_dependencies:
     git: https://github.com/ysbaddaden/minitest.cr.git
     version: ~> 0.3.4
 
-license: MIT
+license: GPL
