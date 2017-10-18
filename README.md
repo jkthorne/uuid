@@ -1,6 +1,19 @@
 # uuid
 
-TODO: Write a description here
+UUIDs for crystal
+
+create generic UUID
+```crystal
+require "uuid"
+
+UUID.new
+```
+
+create UUID with strings and options for variants and versions
+```crystal
+UUID.new("c20335c3-7f46-4126-aae9-f665434ad12b", variant: UUID::Variant::NCS)
+UUID.new(StaticArray(UInt8, 16).new(0_u8), version: UUID::Version::V3)
+```
 
 ## Installation
 
@@ -9,29 +22,5 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   uuid:
-    github: [your-github-name]/uuid
+    github: wontruefree/uuid
 ```
-
-## Usage
-
-```crystal
-require "uuid"
-```
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[your-github-name]/uuid/fork )
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create a new Pull Request
-
-## Contributors
-
-- [[your-github-name]](https://github.com/[your-github-name]) Jack Thorne - creator, maintainer
